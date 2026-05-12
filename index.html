@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="id">-
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KrezCrunchy</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Ribeye&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins', sans-serif;
+    }
+
+    body{
+      background:#ffe169;
+      color:#7c0206;
+    }
+
+    header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 8%;
+    }
+
+    .logo{
+      display:flex;
+      align-items:center;
+      gap:15px;
+    }
+
+    .logo img{
+      width:70px;
+      height:70px;
+      border-radius:50%;
+    }
+
+    .logo h1{
+      font-family:'Ribeye', cursive;
+      color:#e12127;
+      font-size:32px;
+    }
+
+    nav a{
+      text-decoration:none;
+      margin-left:25px;
+      color:#7c0206;
+      font-weight:600;
+    }
+
+    .hero{
+      min-height:90vh;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:50px 8%;
+      flex-wrap:wrap;
+    }
+
+    .hero-text{
+      max-width:500px;
+    }
+
+    .hero-text h2{
+      font-size:70px;
+      line-height:1.1;
+      font-family:'Ribeye', cursive;
+      color:#e12127;
+      margin-bottom:20px;
+    }
+
+    .hero-text p{
+      font-size:18px;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 30px;
+      background:#7c0206;
+      color:white;
+      text-decoration:none;
+      border-radius:50px;
+      margin-right:15px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#e12127;
+    }
+
+    .hero img{
+      width:420px;
+      border-radius:50%;
+      border:12px solid #7c0206;
+    }
+
+    section{
+      padding:80px 8%;
+    }
+
+    .title{
+      text-align:center;
+      font-size:45px;
+      font-family:'Ribeye', cursive;
+      color:#e12127;
+      margin-bottom:50px;
+    }
+
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:white;
+      border-radius:25px;
+      padding:25px;
+      text-align:center;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .card img{
+      width:100%;
+      border-radius:20px;
+      margin-bottom:15px;
+    }
+
+    .card h3{
+      color:#e12127;
+      margin-bottom:10px;
+    }
+
+    .price{
+      margin-top:15px;
+      display:inline-block;
+      background:#7c0206;
+      color:white;
+      padding:10px 20px;
+      border-radius:30px;
+    }
+
+    .steps{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:25px;
+      text-align:center;
+    }
+
+    .step{
+      background:white;
+      padding:30px;
+      border-radius:25px;
+    }
+
+    .step h3{
+      color:#e12127;
+      margin:15px 0;
+    }
+
+    .reviews{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .review{
+      background:white;
+      padding:25px;
+      border-radius:25px;
+      text-align:center;
+    }
+
+    .review img{
+      width:90px;
+      height:90px;
+      border-radius:50%;
+      object-fit:cover;
+      margin-bottom:15px;
+    }
+
+    footer{
+      background:#7c0206;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:50px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <div class="logo">
+      <img src="logo.png" alt="">
+      <h1>KrezCrunchy</h1>
+    </div>
+
+    <nav>
+      <a href="#home">Beranda</a>
+      <a href="#produk">Produk</a>
+      <a href="#pembelian">Pembelian</a>
+      <a href="#review">Review</a>
+    </nav>
+
+  </header>
+
+  <section class="hero" id="home">
+
+    <div class="hero-text">
+      <h2>KrezCrunchy</h2>
+
+      <p>
+        KrezCrunchy adalah bisnis makanan ringan dengan camilan pedas,
+        gurih, dan super crunchy. Nama KrezCrunchy berasal dari bunyi
+        “krez krez” saat dimakan dengan tekstur renyah yang bikin nagih!
+      </p>
+
+      <a href="#produk" class="btn">Lihat Produk</a>
+      <a href="#pembelian" class="btn">Cara Beli</a>
+    </div>
+
+    <img src="logo.png" alt="">
+
+  </section>
+
+  <section id="produk">
+
+    <h2 class="title">Produk Kami</h2>
+
+    <div class="products">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60?q=80&w=800&auto=format&fit=crop" alt="">
+
+        <h3>Kerupuk Seblak</h3>
+
+        <p>
+          Kerupuk pedas gurih dengan bumbu seblak khas yang bikin nagih.
+        </p>
+
+        <div class="price">Mulai Rp5.000</div>
+      </div>
+
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1604908176997-431ecf1b5b0b?q=80&w=800&auto=format&fit=crop" alt="">
+
+        <h3>Makroni Cikeruh</h3>
+
+        <p>
+          Makroni crunchy super pedas dengan berbagai level rasa.
+        </p>
+
+        <div class="price">Mulai Rp5.000</div>
+      </div>
+
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?q=80&w=800&auto=format&fit=crop" alt="">
+
+        <h3>Basreng</h3>
+
+        <p>
+          Basreng renyah dengan bumbu pedas khas KrezCrunchy.
+        </p>
+
+        <div class="price">Mulai Rp5.000</div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="pembelian">
+
+    <h2 class="title">Cara Pembelian</h2>
+
+    <div class="steps">
+
+      <div class="step">
+        <h3>1. Pilih Produk</h3>
+        <p>Pilih camilan favorit yang ingin dibeli.</p>
+      </div>
+
+      <div class="step">
+        <h3>2. Hubungi Admin</h3>
+        <p>Pesan melalui WhatsApp atau Instagram.</p>
+      </div>
+
+      <div class="step">
+        <h3>3. Pembayaran</h3>
+        <p>Lakukan pembayaran sesuai total pesanan.</p>
+      </div>
+
+      <div class="step">
+        <h3>4. Pesanan Dikirim</h3>
+        <p>Pesanan akan segera diproses dan dikirim.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="review">
+
+    <h2 class="title">Review Pelanggan</h2>
+
+    <div class="reviews">
+
+      <div class="review">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="">
+        <h3>Siska</h3>
+        <p>"Pedasnya nampol banget, bikin ketagihan!"</p>
+      </div>
+
+      <div class="review">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+        <h3>Rizky</h3>
+        <p>"Renyah dan bumbunya meresap."</p>
+      </div>
+
+      <div class="review">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="">
+        <h3>Nadia</h3>
+        <p>"Packaging lucu dan rasanya enak."</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 KrezCrunchy | Website Bisnis Makanan Ringan
+  </footer>
+
+</body>
+</html>
